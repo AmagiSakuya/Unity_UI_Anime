@@ -9,15 +9,12 @@ namespace Sakuya.UnityUIAnime.Define
     {
         [Header("位移")]
         public Vector3AnimeSettings[] positionAnimeQueue;
-        public bool posAnimeLoop;
         public bool relativePos;
         [Header("旋转")]
         public Vector3AnimeSettings[] rotationAnimeQueue;
-        public bool rotationAnimeLoop;
         public bool relativeRotation;
         [Header("缩放")]
         public Vector3AnimeSettings[] scaleAnimeQueue;
-        public bool scaleAnimeLoop;
         public bool relativeScale;
     }
 }

@@ -9,6 +9,5 @@ namespace Sakuya.UnityUIAnime.Define
     {
         [Header("透明度")]
         public FloatAnimeSettings[] alphaAnimeQueue;
-        public bool alphaAnimeLoop;
     }
 }

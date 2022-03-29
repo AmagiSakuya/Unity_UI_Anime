@@ -20,7 +20,7 @@ namespace Sakuya.UnityUIAnimeEditor
         {
             if (!Application.isPlaying)
             {
-                t.KillAnime();
+                t.Dispose();
             }
             EditorApplication.update -= ProgressIEnumerator;
         }
@@ -41,18 +41,33 @@ namespace Sakuya.UnityUIAnimeEditor
             GUILayout.BeginHorizontal();
             Color m_defaultColor = GUI.color;
             GUI.color = Color.green;
-            if (GUILayout.Button("预览动画"))
+            if ( GUILayout.Button("Play"))
             {
-                t.KillAnime();
-                t.DoAnime();
+                t.Play();
             }
+
             GUI.color = Color.red;
-            if (GUILayout.Button("停止"))
+            if (GUILayout.Button("Dispose"))
             {
-                t.KillAnime();
+                t.Dispose();
             }
             GUI.color = m_defaultColor;
             GUILayout.EndHorizontal();
+
+            GUILayout.BeginHorizontal();
+
+            if (GUILayout.Button("Pause"))
+            {
+                t.Pause();
+            }
+
+            if (GUILayout.Button("Resume"))
+            {
+                t.Resume();
+            }
+            GUI.color = m_defaultColor;
+            GUILayout.EndHorizontal();
+
             GUILayout.EndVertical();
         }
     }

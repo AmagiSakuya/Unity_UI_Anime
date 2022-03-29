@@ -13,10 +13,8 @@ MonoBehaviour:
   m_Name: "RectTransform_UIAnime_Define_\u7F29\u653E"
   m_EditorClassIdentifier: 
   positionAnimeQueue: []
-  posAnimeLoop: 0
   relativePos: 0
   rotationAnimeQueue: []
-  rotationAnimeLoop: 0
   relativeRotation: 0
   scaleAnimeQueue:
   - duration: 0.3
@@ -54,6 +52,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 0
+    timeDecimalPoint: -1
     from: {x: 1, y: 1.1, z: 1}
     to: {x: 1.05, y: 0.95, z: 1}
   - duration: 0.3
@@ -91,7 +90,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 0
+    timeDecimalPoint: -1
     from: {x: -1, y: 1.1, z: 1}
     to: {x: -1.05, y: 0.95, z: 1}
-  scaleAnimeLoop: 1
   relativeScale: 0
