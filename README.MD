@@ -18,8 +18,7 @@
 
 ## ToDo
 1. Shader动画
-2. Text打字机动画 
-3. Timeline式配置与预览
+2. Timeline式配置与预览
 
 ## 关于我
 [新浪微博](https://weibo.com/233742343/)
